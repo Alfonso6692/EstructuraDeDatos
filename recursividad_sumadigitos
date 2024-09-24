@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+   
+   public static void main (String[] args)
+   {
+	Scanner entrada = new Scanner (System.in);
+    System.out.print("Ingrese numero:  ");
+    int numero = entrada.nextInt();
+    System.out.println(sumaDigitos(numero));
+}
+
+public static int sumaDigitos (int numero) {
+	if(numero<10) {
+	   return numero;
+
+	} else {
+	  return (numero % 10) + sumaDigitos(numero / 10);
+	}
+}
+}
