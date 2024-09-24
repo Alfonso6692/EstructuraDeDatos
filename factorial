@@ -1,0 +1,14 @@
+package clases;
+import java.util.Scanner;
+public class clase_principal {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner (System.in);
+		System.out.print("Introduce el numero para calcular el factorial: ");
+		int numero = entrada.nextInt();
+		recursividad recursividad = new recursividad();
+		
+		int factorial = recursividad.Factorial(numero);
+		System.out.print("El factorial de "+ numero + " es: "+ factorial);
+	}
+	 
+}
